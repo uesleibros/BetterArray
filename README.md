@@ -18,3 +18,33 @@
 3. Create a BetterArray object with the desired size and data type;
 4. Access and manipulate array elements using the overloaded [] operator or other available methods;
 5. Compile and run your project;
+
+## Example
+### List
+```cpp
+BetterArray<int> numbers(10);
+for (int i = 0; i < numbers.size; i++) {
+  numbers[i] = i + 1;
+}
+
+std::cout << numbers.size << std::endl;
+std::cout << numbers[3] << std::endl;
+```
+
+### Matrice
+```cpp
+BetterArray<int>::Matrix<int> matrix(3, 3);
+
+for (int i = 0; i < 3; i++) {
+  for (int j = 0; j < 3; j++) {
+    matrix[i][j] = i * j;
+  }
+}
+
+for (int i = 0; i < 3; i++) {
+  for (int j = 0; j < 3; j++) {
+    std::cout << matrix[i][j] << " ";
+  }
+  std::cout << std::endl;
+}
+```
