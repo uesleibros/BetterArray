@@ -27,3 +27,11 @@ numbers.add(7);
 
 std::cout << numbers.get_size() << std::endl; // Returns 1
 ```
+
+### Iterator
+```cpp
+ for (Iterator<int> it = numbers.begin(); it != numbers.end(); ++it) {
+    std::cout << *it << " ";
+ }
+ std::cout << std::endl;
+```
