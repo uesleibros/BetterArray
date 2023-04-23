@@ -1,7 +1,7 @@
-#ifndef BETTER_ARRAY_HPP
-#define BETTER_ARRAY_HPP
+#ifndef BETTER_ARRAY_H
+#define BETTER_ARRAY_H
 
-#include "Iterator.hpp"
+#include "Iterator.h"
 
 template <typename T>
 class BetterArray {
