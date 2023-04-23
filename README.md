@@ -18,20 +18,3 @@
 3. Create a BetterArray object with the desired size and data type;
 4. Access and manipulate array elements using the overloaded [] operator or other available methods;
 5. Compile and run your project;
-
-## Example
-### List
-```cpp
-BetterArray<int> numbers;
-numbers.add(7);
-
-std::cout << numbers.get_size() << std::endl; // Returns 1
-```
-
-### Iterator
-```cpp
- for (Iterator<int> it = numbers.begin(); it != numbers.end(); ++it) {
-    std::cout << *it << " ";
- }
- std::cout << std::endl;
-```
