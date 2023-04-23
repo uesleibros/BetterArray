@@ -22,29 +22,8 @@
 ## Example
 ### List
 ```cpp
-BetterArray<int> numbers(10);
-for (int i = 0; i < numbers.size; i++) {
-  numbers[i] = i + 1;
-}
+BetterArray<int> numbers;
+numbers.add(7);
 
-std::cout << numbers.size << std::endl;
-std::cout << numbers[3] << std::endl;
-```
-
-### Matrice
-```cpp
-BetterArray<int>::Matrix<int> matrix(3, 3);
-
-for (int i = 0; i < 3; i++) {
-  for (int j = 0; j < 3; j++) {
-    matrix[i][j] = i * j;
-  }
-}
-
-for (int i = 0; i < 3; i++) {
-  for (int j = 0; j < 3; j++) {
-    std::cout << matrix[i][j] << " ";
-  }
-  std::cout << std::endl;
-}
+std::cout << numbers.get_size() << std::endl; // Returns 1
 ```
