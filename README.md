@@ -14,7 +14,7 @@ BetterArray is a C++ library that provides a more convenient and efficient way t
 
 ## Features:
 
-- Support for one-dimensional and two-dimensional arrays;
+- ~Support for one-dimensional and two-dimensional arrays~;
 - Support for any data type;
 - Automatic memory management;
 - Bounds checking;
