@@ -6,7 +6,7 @@ int main() {
 
    numeros.remove(2);
    numeros.remove(4);
-   std::cout << numeros.get_size(); << std::endl;
+   std::cout << numeros.get_size() << std::endl;
   
    for (Array<int>::Iterator it = numeros.begin(); it != numeros.end(); ++it) {
       std::cout << *it << " ";
