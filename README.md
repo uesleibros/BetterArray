@@ -1,6 +1,6 @@
 ![Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CPT-programming-array.svg/2560px-CPT-programming-array.svg.png)
 
-[![License](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/uesleibros/BetterArray/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uesleibros/BetterArray/blob/master/LICENSE)
 ![Forks](https://img.shields.io/github/forks/uesleibros/BetterArray)
 ![Stars](https://img.shields.io/github/stars/uesleibros/BetterArray.svg)
 ![Issues](https://img.shields.io/github/issues/uesleibros/BetterArray.svg)
