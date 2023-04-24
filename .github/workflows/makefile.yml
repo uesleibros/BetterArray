@@ -19,6 +19,9 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y make
 
+    - name: Make script executable
+      run: chmod +x tests/run_tests.sh
+
     - name: Run check
       run: make check
 
