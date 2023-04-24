@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/BetterArray.h"
+#include "../../include/BetterArray.h"
 
 int main() {
    Array<int> numeros = {};
