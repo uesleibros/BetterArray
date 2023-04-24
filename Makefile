@@ -16,19 +16,10 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.cpp
 
 -include $(DEPS)
 
-check: $(TARGET)
+check:
 	./tests/run_tests.sh
-
-distcheck: $(TARGET)
-	$(MAKE) -j$(nproc) check
-	tar -czvf $(TARGET)-$(VERSION).tar.gz $(SRCS) $(INCLUDE_DIR) Makefile
-	rm -rf $(TARGET) $(OBJS_DIR)
 
 clean:
 	rm -rf $(OBJS_DIR) $(TARGET)
 
 $(shell mkdir -p $(OBJS_DIR))
-
-$(OBJS_DIR)/%.o: $(SRCS_DIR)/%.cpp
-	mkdir -p $(OBJS_DIR)
-	$(CC) $(CFLAGS) -c -MMD -MP -MF $(patsubst $(SRCS_DIR)/%.cpp,$(OBJS_DIR)/%.d,$<) -o $@ $< -I$(INCLUDE_DIR)
