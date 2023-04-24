@@ -5,8 +5,8 @@
 ![Stars](https://img.shields.io/github/stars/uesleibros/BetterArray.svg)
 ![Issues](https://img.shields.io/github/issues/uesleibros/BetterArray.svg)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/uesleibros/BetterArray.svg)](http://isitmaintained.com/project/uesleibros/BetterArray "Average time to resolve an issue")
-![Contributors](https://img.shields.io/github/contributors/uesleibros/BetterArray.svg)
-[![CodeFactor](https://www.codefactor.io/repository/github/uesleibros/betterarray/badge)]()
+[![CodeFactor](https://www.codefactor.io/repository/github/uesleibros/betterarray/badge)](https://www.codefactor.io/repository/github/uesleibros/betterarray)
+[![Contributors](https://img.shields.io/github/contributors/uesleibros/BetterArray.svg)]()
 ![Makefile](https://github.com/uesleibros/BetterArray/actions/workflows/makefile.yml/badge.svg)
 ![C/C++ Make](https://github.com/uesleibros/BetterArray/actions/workflows/c-cpp.yml/badge.svg)
 ----
