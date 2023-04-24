@@ -14,7 +14,6 @@ BetterArray is a C++ library that provides a more convenient and efficient way t
 
 ## Features:
 
-- Support for one-dimensional and two-dimensional arrays;
 - Support for any data type;
 - Automatic memory management;
 - Bounds checking;
@@ -30,7 +29,7 @@ BetterArray is a C++ library that provides a more convenient and efficient way t
 - [x] Iterate list items;
 - [x] Merge list with one another;
 - [ ] Shuffle list;
-- [x] Support for multidimensional lists;
+- [x] Support for multidimensional lists (W.I.P);
 
 ## Contributing
 Contributing to this repository is a great way to get involved in the development of this project. We welcome all types of contributions, from bug reports and feature requests to code contributions and documentation improvements. To get started, you can take a look at the open issues and pick one that you would like to work on. If you have an idea for a new feature or improvement, feel free to create a new issue to discuss it with the community. Interested? [Contribute.](https://github.com/uesleibros/BetterArray/pulls)
