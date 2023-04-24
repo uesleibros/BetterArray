@@ -4,7 +4,7 @@ TARGET = libbetterarray.a
 INCLUDE_DIR = include
 SRCS_DIR = src
 OBJS_DIR = objs
-SRCS = $(SRCS_DIR)/BetterArray.cpp $(SRCS_DIR)/Iterator.cpp $(SRCS_DIR)/Implements/BetterArray.inl
+SRCS = $(SRCS_DIR)/BetterArray.cpp $(SRCS_DIR)/Iterator.cpp
 OBJS = $(patsubst $(SRCS_DIR)/%.cpp,$(OBJS_DIR)/%.o,$(SRCS))
 DEPS = $(patsubst $(SRCS_DIR)/%.cpp,$(OBJS_DIR)/%.d,$(SRCS))
 
@@ -17,12 +17,12 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.cpp
 -include $(DEPS)
 
 check: $(TARGET)
-	./tests/run_tests.sh
+    ./tests/run_tests.sh
 
 distcheck: $(TARGET)
-	$(MAKE) -j$(nproc) check
-	tar -czvf $(TARGET)-$(VERSION).tar.gz $(SRCS) $(INCLUDE_DIR) Makefile
-	rm -rf $(TARGET) $(OBJS_DIR)
+    $(MAKE) -j$(nproc) check
+    tar -czvf $(TARGET)-$(VERSION).tar.gz $(SRCS) $(INCLUDE_DIR) Makefile
+    rm -rf $(TARGET) $(OBJS_DIR)
 
 clean:
 	rm -rf $(OBJS_DIR) $(TARGET)
