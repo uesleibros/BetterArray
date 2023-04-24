@@ -42,7 +42,9 @@ public:
 			}
    };
 
-	Array() : data(nullptr), size_(0) {};
+	Array(std::initializer_list<T> init) : data(new T[init.size()]), size_(init.size()) {
+      std::copy(init.begin(), init.end(), data);
+   }
 	~Array();
 
 	T& operator[](int index);
@@ -51,6 +53,7 @@ public:
 	void add(const T& value);
 	void append(const Array<T>& other);
    void append(std::initializer_list<T> ilist);
+   void merge(const Array<T>& other);
 	void remove(int index);
 
 	typename Array<T>::Iterator begin();
