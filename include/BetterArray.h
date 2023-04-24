@@ -13,6 +13,7 @@
 #define BETTER_ARRAY_H
 
 #include <initializer_list>
+#include "../src/utils/Memory.h"
 
 template <typename T>
 class Array {
@@ -42,9 +43,9 @@ public:
 			}
    };
 
-	Array(std::initializer_list<T> init) : data(new T[init.size()]), size_(init.size()) {
-      std::copy(init.begin(), init.end(), data);
-   }
+	Array(std::initializer_list<T> init) : data((T*) safe_malloc(init.size() * sizeof(T))), size_(init.size()) {
+	   std::copy(init.begin(), init.end(), data);
+	}
 	~Array();
 
 	T& operator[](int index);
