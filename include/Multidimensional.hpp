@@ -1,33 +1,34 @@
 //    _                     
 //   /_\  _ _ _ _ __ _ _  _   _____________________________________________
 //  / _ \| '_| '_/ _` | || |  & A better array for C++                    &
-// /_/ \_\_| |_| \__,_|\_, |  & version 1.0                               &
+// /_/ \_\_| |_| \__,_|\_, |  & version 1.2                               &
 //                     |__/   & https://github.com/uesleibros/BetterArray &
 /**************************************************************************\
 + License: MIT                                                             -
 + Open-Source                                                              -
-+ Made with ♥️ for you.                                                    -
++ Made with ♥️ for you.                                                     -
 \**************************************************************************/
 
-#ifndef ITERATOR_HPP
-#define ITERATOR_HPP
+#ifndef BETTER_ARRAY_MULTIDIMENSIONAL_H
+#define BETTER_ARRAY_MULTIDIMENSIONAL_H
 
-template<typename T>
-class Iterator {
+#include <vector>
+#include "BetterArray.h"
+
+template <typename T>
+class ArrayMulti {
 private:
-   T* ptr;
+   std::vector<Array<T>> data;
+
 public:
-   Iterator(T* ptr) : ptr(ptr) {};
-   Iterator& operator++() {
-     ptr++;
-     return *this;
-   }
-   bool operator!=(const Iterator<T>& other) const {
-     return ptr != other.ptr;
-   }
-   T& operator*() {
-     return *ptr;
-   }
+	ArrayMulti() {}
+
+	Array<T>& operator[](int index) {
+	  if (index >= data.size()) {
+	      data.resize(index + 1);
+	  }
+	  return data[index];
+	}
 };
 
 #endif
