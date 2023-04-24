@@ -1,7 +1,7 @@
 <img src="https://shelleygrayteaching.com/wp-content/uploads/2020/03/Blue_3-x-5.png" height="300" />
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uesleibros/BetterArray/blob/master/LICENSE)
-![Forks](https://img.shields.io/github/forks/uesleibros/BetterArray)
+[![Forks](https://img.shields.io/github/forks/uesleibros/BetterArray)](https://github.com/uesleibros/BetterArray/forks)
 ![Stars](https://img.shields.io/github/stars/uesleibros/BetterArray.svg)
 [![Issues](https://img.shields.io/github/issues/uesleibros/BetterArray.svg)](https://github.com/uesleibros/BetterArray/issues)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/uesleibros/BetterArray.svg)](http://isitmaintained.com/project/uesleibros/BetterArray "Average time to resolve an issue")
