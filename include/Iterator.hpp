@@ -9,8 +9,8 @@
 + Made with ♥️ for you.                                                    -
 \**************************************************************************/
 
-#ifndef ITERATOR_H
-#define ITERATOR_H
+#ifndef ITERATOR_HPP
+#define ITERATOR_HPP
 
 template<typename T>
 class Iterator {
