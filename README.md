@@ -6,6 +6,7 @@
 ![Issues](https://img.shields.io/github/issues/uesleibros/BetterArray.svg)
 ![Contributors](https://img.shields.io/github/contributors/uesleibros/BetterArray.svg)
 [![CodeFactor](https://www.codefactor.io/repository/github/uesleibros/betterarray/badge)]()
+![oi](https://github.com/uesleibros/BetterArray/actions/workflows/makefile.yml/badge.svg)
 ----
 BetterArray is a C++ library that provides a more convenient and efficient way to work with arrays. It allows you to easily create and manipulate one-dimensional and two-dimensional arrays of any data type, and provides various useful features such as bounds checking, automatic memory management, and overloaded operators for easy access and manipulation of array elements. The library is designed to be easy to use and integrate into your own projects, and comes with comprehensive documentation and unit tests to ensure correctness and reliability.
 
