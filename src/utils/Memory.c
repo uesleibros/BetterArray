@@ -20,7 +20,7 @@ void safe_free(void* ptr) {
 void* safe_malloc(size_t size) {
     void* ptr = malloc(size);
     if (!ptr) {
-        fprintf(stderr, "Erro: Não foi possível alocar %zu bytes.\n", size);
+        fprintf(stderr, "Error: Cannot allocate %zu bytes.\n", size);
         exit(EXIT_FAILURE);
     }
     return ptr;
