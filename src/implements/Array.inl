@@ -14,10 +14,11 @@
 
 #include <iostream>
 #include <stdexcept>
+#include "../utils/Memory.h"
 
 template <typename T>
 Array<T>::~Array() {
-   delete[] data;
+   safe_free(data);
 }
 
 template<typename T>
@@ -36,15 +37,15 @@ int Array<T>::get_size() {
 
 template <typename T>
 void Array<T>::add(const T& value) {
-	T* nData = new T[size_ + 1];
-	for (int i = 0; i < size_; i++) {
-		nData[i] = data[i];
+	T* nData = (T*) safe_realloc(data, (size_ + 1) * sizeof(T));
+	if (nData == nullptr) {
+		throw std::bad_alloc();
 	}
-	nData[size_] = value;
-	size_++;
-	delete[] data;
 	data = nData;
+	data[size_] = value;
+	size_++;
 }
+
 
 template <typename T>
 void Array<T>::append(std::initializer_list<T> values) {
@@ -66,7 +67,7 @@ void Array<T>::remove(int index) {
 		throw std::out_of_range("List index out of range.");
 	}
 
-	T* temp = new T[size_ - 1];
+	T* temp = reinterpret_cast<T*>(safe_malloc((size_ - 1) * sizeof(T)));
 	for (int i = 0; i < index; i++) {
 		temp[i] = data[i];
 	}
@@ -76,8 +77,8 @@ void Array<T>::remove(int index) {
 	}
 
 	size_--;
-	delete[] data;
-	data = temp;
+	safe_free(data);
+	data = reinterpret_cast<T*>(safe_realloc(temp, size_ * sizeof(T)));
 }
 
 #endif
