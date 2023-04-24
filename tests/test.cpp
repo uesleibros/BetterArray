@@ -1,4 +1,4 @@
-#include "include/BetterArray.h"
+#include "../include/BetterArray.h"
 #include <iostream>
 
 int main(int argc, char* argv[]) {
