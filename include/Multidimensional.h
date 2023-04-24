@@ -24,7 +24,7 @@ public:
 	ArrayMulti() {}
 
 	Array<T>& operator[](int index) {
-	  if (index >= static_cast<size_t>(data.size())) {
+	  if (index >= data.size()) {
 	      data.resize(index + 1);
 	  }
 	  return data[index];
