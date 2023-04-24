@@ -4,7 +4,7 @@ TARGET = libbetterarray.a
 INCLUDE_DIR = include
 SRCS_DIR = src
 OBJS_DIR = objs
-SRCS = $(SRCS_DIR)/BetterArray.cpp $(SRCS_DIR)/Iterator.cpp $(SRCS_DIR)/implements/Array.inl $(SRCS_DIR)/implements/Iterator.inl
+SRCS = $(SRCS_DIR)/BetterArray.cpp $(SRCS_DIR)/Iterator.cpp
 OBJS = $(patsubst $(SRCS_DIR)/%.cpp,$(OBJS_DIR)/%.o,$(SRCS))
 DEPS = $(patsubst $(SRCS_DIR)/%.cpp,$(OBJS_DIR)/%.d,$(SRCS))
 
