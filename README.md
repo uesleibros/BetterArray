@@ -20,10 +20,5 @@ BetterArray is a C++ library that provides a more convenient and efficient way t
 - Easy to use and integrate into your own projects;
 - Comprehensive documentation and unit tests;
 
-## Usage:
-
-1. Download the library from GitHub;
-2. Include the header file "BetterArray.h" in your project;
-3. Create a BetterArray object with the desired size and data type;
-4. Access and manipulate array elements using the overloaded [] operator or other available methods;
-5. Compile and run your project;
+## Contributing
+Contributing to this repository is a great way to get involved in the development of this project. We welcome all types of contributions, from bug reports and feature requests to code contributions and documentation improvements. To get started, you can take a look at the open issues and pick one that you would like to work on. If you have an idea for a new feature or improvement, feel free to create a new issue to discuss it with the community. Interested? [Contribute.](https://github.com/uesleibros/BetterArray/pulls)
