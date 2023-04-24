@@ -13,4 +13,6 @@ g++ -Wall -Wextra -std=c++11 -O2 -I../include tests/src/adds.cpp -o adds
 ./adds
 
 # Clean up
-rm test
+rm ./list
+rm ./remove
+rm ./adds
