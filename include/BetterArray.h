@@ -4,7 +4,9 @@
 // /_/ \_\_| |_| \__,_|\_, |  & version 1.0                               &
 //                     |__/   & https://github.com/uesleibros/BetterArray &
 /**************************************************************************\
-* License: Apache *
++ License: Apache-2.0                                                      -
++ Open-Source                                                              -
++ Made with ♥️ for you.                                                    -
 \**************************************************************************/
 
 #ifndef BETTER_ARRAY_H
