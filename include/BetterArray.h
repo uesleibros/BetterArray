@@ -58,7 +58,7 @@ public:
 };
 
 #include "Multidimensional.h"
-#include "implements/Array.inl"
-#include "implements/Iterator.inl"
+#include "../src/implements/Array.inl"
+#include "../src/implements/Iterator.inl"
 
 #endif
