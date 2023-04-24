@@ -28,3 +28,7 @@ clean:
 	rm -rf $(OBJS_DIR) $(TARGET)
 
 $(shell mkdir -p $(OBJS_DIR))
+
+$(OBJS_DIR)/%.o: $(SRCS_DIR)/%.cpp
+	mkdir -p $(OBJS_DIR)
+	$(CC) $(CFLAGS) -c -MMD -MP -MF $(patsubst $(SRCS_DIR)/%.cpp,$(OBJS_DIR)/%.d,$<) -o $@ $< -I$(INCLUDE_DIR)
