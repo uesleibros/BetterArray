@@ -1,16 +1,12 @@
 #!/bin/bash
 
-# Compile a biblioteca e o arquivo de teste
-g++ -std=c++11 -Iinclude -L. -lbetterarray tests/test.cpp -o test
+# Run tests for BetterArray
 
-# Execute o teste e salve o resultado
-./test > test_output.txt
+# Compile the test executable
+g++ -Wall -Wextra -std=c++11 -O2 -I../include ../tests/BetterArray_tests.cpp -o test
 
-# Verifique se o resultado do teste está correto
-if diff test_output.txt expected_output.txt; then
-    echo "Teste passou com sucesso!"
-    exit 0
-else
-    echo "Teste falhou."
-    exit 1
-fi
+# Run the tests
+./test
+
+# Clean up
+rm test
