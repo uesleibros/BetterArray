@@ -17,13 +17,12 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.cpp
 -include $(DEPS)
 
 check: $(TARGET)
-    ./tests/run_tests.sh
+	./tests/run_tests.sh
 
 distcheck: $(TARGET)
-    $(MAKE) -j$(nproc) check
-    tar -czvf $(TARGET)-$(VERSION).tar.gz $(SRCS) $(INCLUDE_DIR) Makefile
-    rm -rf $(TARGET) $(OBJS_DIR)
-
+	$(MAKE) -j$(nproc) check
+	tar -czvf $(TARGET)-$(VERSION).tar.gz $(SRCS) $(INCLUDE_DIR) Makefile
+	rm -rf $(TARGET) $(OBJS_DIR)
 
 clean:
 	rm -rf $(OBJS_DIR) $(TARGET)
