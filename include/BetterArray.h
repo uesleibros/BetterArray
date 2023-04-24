@@ -57,8 +57,8 @@ public:
  	typename Array<T>::Iterator end();
 };
 
-#include "Multidimensional.h"
 #include "../src/implements/Array.inl"
 #include "../src/implements/Iterator.inl"
+#include "Multidimensional.h"
 
 #endif
