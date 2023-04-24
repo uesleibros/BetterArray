@@ -1,12 +1,12 @@
 //    _                     
 //   /_\  _ _ _ _ __ _ _  _   _____________________________________________
 //  / _ \| '_| '_/ _` | || |  & A better array for C++                    &
-// /_/ \_\_| |_| \__,_|\_, |  & version 1.0                               &
+// /_/ \_\_| |_| \__,_|\_, |  & version 1.2                               &
 //                     |__/   & https://github.com/uesleibros/BetterArray &
 /**************************************************************************\
 + License: MIT                                                             -
 + Open-Source                                                              -
-+ Made with ♥️ for you.                                                    -
++ Made with ♥️ for you.                                                     -
 \**************************************************************************/
 
 #ifndef BETTER_ARRAY_INL
@@ -16,12 +16,12 @@
 #include <stdexcept>
 
 template <typename T>
-BetterArray<T>::~BetterArray() {
+Array<T>::~Array() {
    delete[] data;
 }
 
 template<typename T>
-T& BetterArray<T>::operator[](int index) {
+T& Array<T>::operator[](int index) {
 	if (index < 0 || index > size_ - 1) {
 		std::cerr << "List index out of range." << std::endl;
 		system("pause");
@@ -30,12 +30,12 @@ T& BetterArray<T>::operator[](int index) {
 }
 
 template <typename T>
-int BetterArray<T>::get_size() {
+int Array<T>::get_size() {
 	return size_;
 }
 
 template <typename T>
-void BetterArray<T>::add(const T& value) {
+void Array<T>::add(const T& value) {
 	T* nData = new T[size_ + 1];
 	for (int i = 0; i < size_; i++) {
 		nData[i] = data[i];
@@ -47,7 +47,14 @@ void BetterArray<T>::add(const T& value) {
 }
 
 template <typename T>
-void BetterArray<T>::remove(int index) {
+void Array<T>::append(std::initializer_list<T> values) {
+	for (const T& value : values) {
+	  add(value);
+	}
+}
+
+template <typename T>
+void Array<T>::remove(int index) {
 	if (index < 0 || index > size_ - 1) {
 		throw std::out_of_range("List index out of range.");
 	}
@@ -64,16 +71,6 @@ void BetterArray<T>::remove(int index) {
 	size_--;
 	delete[] data;
 	data = temp;
-}
-
-template <typename T>
-Iterator<T> BetterArray<T>::begin() {
-   return Iterator<T>(data);
-}
-
-template <typename T>
-Iterator<T> BetterArray<T>::end() {
-   return Iterator<T>(data + size_);
 }
 
 #endif
