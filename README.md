@@ -1,4 +1,4 @@
-<img src="https://shelleygrayteaching.com/wp-content/uploads/2020/03/Blue_3-x-5.png" height="300" />
+<img src="https://shelleygrayteaching.com/wp-content/uploads/2020/03/Blue_3-x-5.png" height="200" />
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uesleibros/BetterArray/blob/master/LICENSE)
 [![Forks](https://img.shields.io/github/forks/uesleibros/BetterArray)](https://github.com/uesleibros/BetterArray/forks)
