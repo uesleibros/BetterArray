@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/20230425_131846.png" height="250"/>
+  <img src="./assets/20230425_131846.png" height="200"/>
 </div>
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uesleibros/BetterArray/blob/master/LICENSE)
